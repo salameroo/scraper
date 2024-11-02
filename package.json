@@ -1,0 +1,25 @@
+{
+  "name": "proyectos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"node index.js\" \"npm start --prefix client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "framer-motion": "^11.11.10",
+    "lucide-react": "^0.454.0",
+    "puppeteer": "^23.6.1",
+    "react-router-dom": "^6.27.0"
+  }
+}

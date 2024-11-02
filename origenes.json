@@ -1,0 +1,47 @@
+[
+    {
+        "nombre": "AS",
+        "url": "https://as.com/",
+        "cookies_file": "AS_cookies.json"
+    },
+    {
+        "nombre": "Marca",
+        "url": "https://marca.com/",
+        "cookies_file": "marca_cookies.json"
+    },
+    {
+        "nombre": "xataka",
+        "url": "https://www.xataka.com/",
+        "cookies_file": "xataka_cookies.json"
+    },
+    {
+        "nombre": "samsung",
+        "url": "https://www.samsung.com/",
+        "cookies_file": "samsung_cookies.json"
+    },
+    {
+        "nombre": "revistagq",
+        "url": "https://www.revistagq.com/",
+        "cookies_file": "revistagq_cookies.json"
+    },
+    {
+        "nombre": "elpais",
+        "url": "https://elpais.com/",
+        "cookies_file": "elpais_cookies.json"
+    },
+    {
+        "nombre": "Apple",
+        "url": "https://apple.com/",
+        "cookies_file": "apple_cookies.json"
+    },
+    {
+        "nombre": "heraldo",
+        "url": "https://www.heraldo.es/",
+        "cookies_file": "heraldo_cookies.json"
+    },
+    {
+        "nombre": "heraldo",
+        "url": "https://www.heraldo.es/",
+        "cookies_file": "heraldo_cookies.json"
+    }
+]
