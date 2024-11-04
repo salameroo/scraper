@@ -43,5 +43,12 @@
         "nombre": "heraldo",
         "url": "https://www.heraldo.es/",
         "cookies_file": "heraldo_cookies.json"
+    },
+    {
+        "nombre": "Apple",
+        "url": "https://www.apple.com/",
+        "uso": "trabajo",
+        "descripcion": "Url de apple para poner los datos y scrapearlos",
+        "cookies_file": "Apple_cookies.json"
     }
 ]
