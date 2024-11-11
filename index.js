@@ -9,7 +9,24 @@ const { auth, requiresAuth } = require('express-openid-connect');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const { auth } = require('express-oauth2-jwt-bearer');
 
+const jwtCheck = auth({
+    audience: 'https://somontanosocial.api.scraper',
+    issuerBaseURL: 'https://dev-1duhzfzedlymqcp6.eu.auth0.com/',
+    tokenSigningAlg: 'RS256'
+});
+
+// enforce on all endpoints
+app.use(jwtCheck);
+
+app.get('/authorized', function (req, res) {
+    res.send('Secured Resource');
+});
+
+app.listen(port);
+
+console.log('Running on port ', port);
 // Configuración de Auth0
 const authConfig = {
     authRequired: true,
@@ -18,7 +35,13 @@ const authConfig = {
     baseURL: process.env.BASE_URL,
     clientID: process.env.AUTH0_CLIENT_ID,
     issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL,
+    authorizationParams: {
+        audience: process.env.AUTH0_API_AUDIENCE, // Configura esto en tu .env
+        response_type: 'token id_token', // Incluye el token de acceso en la respuesta
+        scope: 'openid profile email'
+    }
 };
+
 
 app.use(auth(authConfig));
 app.use(cors());
